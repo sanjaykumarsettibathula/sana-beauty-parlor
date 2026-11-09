@@ -18,13 +18,31 @@ export function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/40 backdrop-blur-md border-b border-white/10">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-        <Link href="/" className="flex flex-col">
-          <span className="font-script text-3xl text-white leading-none" style={{ fontFamily: "'Dancing Script', cursive", fontWeight: 700, fontStyle: 'italic' }}>
-            Sana<span className="text-primary">.</span>
-          </span>
-          <span className="text-[10px] tracking-[0.22em] uppercase font-semibold text-primary mt-0.5">
-            Beauty Parlor
-          </span>
+        <Link href="/" className="flex items-center gap-2.5">
+          {/* Brand Logo */}
+          <img
+            src="/favicon.png"
+            alt="SANA Beauty Parlor Logo"
+            className="w-12 h-12 object-contain shrink-0"
+          />
+
+          {/* Brand Name */}
+          <div className="flex flex-col">
+            <span
+              className="font-script text-3xl text-white leading-none"
+              style={{
+                fontFamily: "'Dancing Script', cursive",
+                fontWeight: 700,
+                fontStyle: "italic",
+              }}
+            >
+              Sana<span className="text-primary">.</span>
+            </span>
+
+            <span className="text-[10px] tracking-[0.22em] uppercase font-semibold text-primary mt-0.5">
+              Beauty Parlor
+            </span>
+          </div>
         </Link>
 
         {/* Desktop Nav */}
